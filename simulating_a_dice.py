@@ -14,7 +14,7 @@ import random#this inports random
 
 
 def questions():
-    answer = input("do you want to roll a 4  sidded,6 sidded or 12 sided dice?")
+    answer = input("Do you want to roll a 4  sided,6 sided or 12 sided dice?")
     if answer == ("4"):
         dice4()
     elif answer == ("6"):
@@ -22,14 +22,14 @@ def questions():
     elif answer == ("12"):
         dice12()
     else:
-        print ("invalid answer")
-        quiting = input("do you want to quit")
+        print ("Invalid Answer")
+        quiting = input("Do you want to quit ?")
         if (quiting == ("y")) or (quiting == ("Y")):
             quit()
         elif (quiting == ("n")) or (quiting == ("N")):
             questions()
         else:
-            print("invalid answer!!!")
+            print("Invalid Answer!!!")
             questions()
             
 #the below code:
